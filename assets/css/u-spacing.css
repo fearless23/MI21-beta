@@ -1,0 +1,152 @@
+/* 
+1. We use modular scale values.
+2. HTML node place elements left to right and top to bottom, thus each element 
+   take a top and/or left space from previous one. 
+   So, We use 2 Spaces directios(left and top) instead of 4 (left, right, top, bottom)
+   This will cover most cases
+3. x represent horiontal direction
+   y represent vertical direction
+
+4. Usually spacing in x is double of y on same elements especially the margin.
+5. Five Sizes: extra-small(xs), small(sm), normal(nm), medium(md), large(lg)
+   nm: 1em, and each other is 1 step +/- on modular scale.
+*/
+
+/* _______ MARGINS __________ */
+.m-0 {
+  margin: 0;
+}
+
+.m-x {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.m-y {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.m-y-md {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.m-t {
+  margin-top: 0.5em;
+}
+
+.m-t-md {
+  margin-top: 1em;
+}
+
+.m-t-lg {
+  margin-top: 1.26em;
+}
+
+.m-l {
+  margin-left: 0.5em;
+}
+.m-l-md {
+  margin-left: 1em;
+}
+
+.m-l-lg {
+  margin-left: 1.26em;
+}
+
+/* GROUPS */
+
+/* Vertical Group */
+.group-v > *:not(:first-child) {
+  margin-top: 1em;
+}
+
+/* Horizontal Group */
+.group-h > *:not(:first-child) {
+  margin-left: 1em;
+}
+
+/* PADDINGS */
+
+.p-0 {
+  padding: 0;
+}
+
+.p-x {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.p-x-md {
+  padding-left: 1.12em;
+  padding-right: 1.12em;
+}
+
+.p-x-lg {
+  padding-left: 1.59em;
+  padding-right: 1.59em;
+}
+
+.p-y {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.p-y-md {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.p-t {
+  padding-top: 0.5em;
+}
+.p-t-md {
+  padding-top: 1em;
+}
+
+
+
+/* BORDER RADIUS */
+
+.rad-0 {
+  border-radius: 0;
+}
+
+.rad-sm {
+  border-radius: 0.22em;
+}
+
+
+/* Line Heights */
+.lh-1 {
+  line-height: 1;
+}
+
+
+/*  SIZES */
+.xs {
+  font-size: 0.8em;
+}
+.sm {
+  font-size: 0.89em;
+}
+.nm {
+  font-size: 1em;
+}
+.md {
+  font-size: 1.12em;
+}
+.lg {
+  font-size: 1.26em;
+}
+
+/* FONT WEIGHTS */
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 300;
+}

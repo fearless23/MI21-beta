@@ -1,0 +1,56 @@
+/*_______#RESET-STYLES_______*/
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+em,
+strong {
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div,
+nav,
+main {
+  outline: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

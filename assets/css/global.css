@@ -1,0 +1,30 @@
+/*_______#GLOBAL_______*/
+div, section, main, footer, nav, article {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg, #ffffff);
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.42;
+  color: var(--text);
+}
+
+@media screen and (min-width: 1601px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+
+/*_______#CONTAINER____EXTEND___*/
+.container-fluid {
+  max-width: 82.11em;
+  /* max-width: 66.34em; */
+  padding: 0 1em;
+  margin: 0 auto;
+  position: relative;
+}

@@ -1,0 +1,121 @@
+/*_______#FORMS_______*/
+
+/* Reset for any form element: input, select, textarea */
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  outline: 0;
+  border-radius: 0.22em;
+  font-size: 0.89em;
+  font-weight: 400;
+  line-height: 1;
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid hsla(0, 0%, 71%, 0.5);
+  background: var(--bg);
+  padding: 0.5em 1em;
+  color: var(--text);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border 60ms ease-in-out;
+}
+
+select {
+  cursor: pointer;
+  padding: .68em 2em .68em 0.68em;
+  background: var(--bg)
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC")
+    no-repeat right 1em center;
+  background-size: 0.56em 0.63em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.min-w{
+  min-width: 10.18em;
+}
+
+textarea {
+  width: 100%;
+  padding: 1em;
+  max-width: 600px;
+  min-height: 6.39em;
+}
+
+input:focus {
+  border: 1px solid var(--blue);
+}
+
+/* For Settings */
+input.input-grey {
+  background: hsla(0, 0%, 71%, 0.21)
+}
+
+input.input-grey:focus {
+  background: var(--bg)
+}
+
+
+/* USE CLASS form-val for validation classes */
+
+.form-val.success{
+  border: 1px solid var(--success);
+}
+
+.form-val.error{
+  border: 1px solid var(--error);
+}
+
+
+/* Form Group */
+.form-group:not(:first-child) {
+  margin-top: 1.26em;
+}
+
+.form-group > label {
+  display: block;
+  font-size: 0.89em;
+  font-weight: bold;
+  margin-bottom: 0.56em;
+  color: var(--text2);
+}
+
+label.xs,
+.form-label.xs {
+  font-size: 0.8em;
+}
+
+/* pro tip: put input inside label if label is required */
+.form-label {
+  font-size: 0.89em;
+  font-weight: bold;
+  position: static;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.input-with-btn {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-btn > * {
+  border-radius: 0;
+  height: 100%;
+}
+
+.input-with-btn input {
+  border-radius: 5px 0 0 5px;
+}
+
+.input-with-btn button {
+  border-radius: 0 5px 5px 0;
+}

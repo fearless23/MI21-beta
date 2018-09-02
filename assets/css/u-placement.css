@@ -1,0 +1,77 @@
+.hidden {
+  position: absolute;
+  z-index: -999999;
+  width: 0;
+  height: 0;
+  min-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.pos-rel, .rel {
+  position: relative;
+}
+
+
+
+.fbox {
+  display: flex;
+  align-items: center;
+}
+
+.fbox-fe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fbox-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fbox-sa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fbox-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fbox-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background: var(--bg);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.fbox-btn > span {
+  line-height: 1;
+}
+
+.block {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.block-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.inline {
+  display: inline-flex;
+}

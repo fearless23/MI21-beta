@@ -1,0 +1,24 @@
+/*_______#BREADXRUMBS_______*/
+
+breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs li {
+  cursor: pointer;
+  padding: 0.5em 0.22em;
+}
+
+.breadcrumbs li:last-child {
+  color: #00a8e8;
+  font-weight: bold;
+}
+
+.breadcrumbs > li + li:before {
+  content: "/";
+  padding-right: 0.2em;
+}
+
+.breadcrumbs > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb);
+}

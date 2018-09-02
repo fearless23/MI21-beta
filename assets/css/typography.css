@@ -1,0 +1,48 @@
+/*_______#TYPOGRAPHY_______*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.56em 0 0.44em 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.42em;
+}
+
+h2 {
+  font-size: 1.26em;
+}
+
+h3 {
+  font-size: 1.12em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1.12em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.89rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--link-color, #00a8e8);
+}

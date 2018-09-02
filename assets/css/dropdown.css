@@ -1,0 +1,80 @@
+/*_______#DROPDOWM_______*/
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 90;
+  right: 0;
+  top: 0;
+  display: none;
+  /*visibility: hidden;*/
+  transition: all 0.5s linear;
+  background: var(--bg);
+  border: 1px solid rgba(181, 181, 181, 0.51);
+  box-shadow: 3px 3px 6px 0px var(--shadow-color);
+}
+
+.dropdown-container:hover .dropdown.active-on-hover,
+.dropdown.is-active {
+  display: block;
+  opacity: 1;
+  animation: opaque 0.22s linear;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dropdown.left {
+  right: initial;
+  left: 0;
+}
+
+.dropdown.center {
+  left: 50%;
+  right: initial;
+  transform: translateX(-50%);
+}
+
+.dropdown.parent-width {
+  width: 100%;
+}
+
+.dropdown.top {
+  top: 100%;
+}
+
+.dropdown.bottom {
+  top: 100%;
+  transform: translateY(0.5em);
+}
+
+.dropdown.bottom:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: -0.5em;
+  transform: translateX(50%);
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0.5em solid rgba(181, 181, 181, 0.5);
+}
+
+.dropdown.bottom.left:before {
+  right: initial;
+  left: 0;
+}
+
+.dropdown.bottom.right:before {
+  right: 0;
+  transform: translateX(-50%);
+}

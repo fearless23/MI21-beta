@@ -1,0 +1,54 @@
+.a-slide-y {
+  animation: slide-y 300ms ease-in-out;
+}
+
+@keyframes slide-y {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(10px);}
+  100% {transform: translateY(0);}
+}
+
+.a-slide-x {
+  animation: slide-x 300ms ease-in-out;
+}
+
+@keyframes slide-x {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(10px);}
+  100% {transform: translateX(0);}
+}
+
+.a-flip-x {
+  transform-origin: 50% 0%;
+  animation: flip-x 800ms ease-in-out;
+}
+
+
+@keyframes flip-x {
+  0% {
+    transform: perspective(400px) rotate3d(1,0,0,-90deg);
+    transition-timing-function: ease-in;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1,0,0,20deg);
+    transition-timing-function: ease-out;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1,0,0,-10deg);
+    transition-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1,0,0,5deg);
+    transition-timing-function: ease-out;
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+/* Add more animatios as needed: Use proper names */

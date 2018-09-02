@@ -1,0 +1,80 @@
+/*_______#TOOLTIP_______*/
+
+.help-text {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.12em;
+  height: 1.12em;
+  margin: 0 .5em;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+.help-text::before {
+  content: "?";
+  z-index: 1;
+  line-height: 1;
+  font-size: 0.89em;
+  font-family: inherit;
+  font-weight: normal;
+}
+
+
+.help-text .content {
+  position: absolute;
+  z-index: 1;
+  padding: 0.5em 1em;
+  background: var(--text);
+  font-size: 0.8em;
+  font-weight: normal;
+  color: var(--bg);
+  min-width: 16.19em;
+  max-width: 32.46em;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Right */
+.content.right  {
+  top: 50%;
+  left: 0;
+  transform: translate3d(2.53em, -50%, 0);
+}
+
+.content.left {
+  top: 50%;
+  right: 0;
+  transform: translate3d(-2.53em, -50%, 0);
+}
+
+
+.help-text:hover .content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.help-text .content::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  border: 1em solid transparent;
+}
+
+
+.help-text .content.right::before {
+  top: 50%;
+  left: 0;
+  border-right-color: var(--text);
+  transform: translate3d(-2em,-50%,0);
+}
+
+.help-text .content.left::before {
+  top: 50%;
+  right: 0;
+  border-left-color: var(--text);
+  transform: translate3d(2em,-50%,0);
+}

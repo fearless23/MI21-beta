@@ -1,0 +1,36 @@
+.title {
+  font-size: 0.89em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.underline {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 0 0.71em;
+}
+
+.capitalize, .cap {
+  text-transform: capitalize;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  height: 0.15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg3);
+}
+
+hr:before {
+  position: absolute;
+  content: attr(data-text);
+  padding: 0px 1em;
+  background: var(--bg3);
+  font-size: 0.8em;
+} /* USAGE:  <hr data-text="OR"> <hr class="bg-dark fbox-je text-blue" data-text="OR">*/

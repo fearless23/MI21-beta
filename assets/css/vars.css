@@ -1,0 +1,70 @@
+/*________________ VARS ___________________*/
+:root {
+  /* Base colors - Change Manually (Fixed, never change Programitically)*/
+  --primary: hsl(197, 100%, 45%); 
+  --secondary: hsl(268, 47%, 62%); 
+
+  --success: hsl(168, 58%, 41%); 
+  --error: hsl(353, 86%, 54%); 
+  --warn: hsl(65, 100%, 57%); 
+
+  --white: hsl(0, 0%, 100%);
+
+  --light: hsl(0, 0%, 98%); /* #fafafa */
+  --light2: hsl(0, 0%, 96%); /* #f5f5f5 */
+  --light3: hsl(0, 0%, 94%); /* #efefef */
+
+  --grey: hsl(0, 0%, 85%); /* #dadada */
+  --grey2: hsl(0, 0%, 71%); /* #b5b5b5 */
+  --grey3: hsl(0, 0%, 50%); /* #808080 Lighter text color */
+
+  --dark: hsl(207, 6%, 32%); /* #4d5256  Main text color */
+  --dark2: hsl(207, 6%, 20%);
+  --dark3: hsl(207, 6%, 7%); /* #121212 */
+
+  --black: hsl(0,0%,0%); /* #000000 */
+
+  /* 
+  USAGE of Base Colors for different use case 
+  -- Change these programtically say Dark Theme
+  */
+
+  --bg: var(--white); /* For body background */
+  --bg2: var(--light); /* For headers, menus */
+  --bg2-hover: var(--light2); /* Hover Effect on menu items in menu */
+  --bg3: var(--grey); /* Dividers in Menu or elsewhere */
+
+  --text: var(--dark); /* Main Text */
+  --text2: var(--grey3); /* Little Lighter Text compared to above*/
+  --text3: var(--grey2); /* Even lighter */
+
+  --shadow-color: hsla(0, 0%, 0%, 0.13);
+  --nav-shadow: hsla(0, 0%, 71%, 0.21);
+
+  --border-color: var(--grey);
+}
+
+/*
+Apply this to parent say body to have cascade effect down to children..
+or Apply to a single component as you see fit.
+Use var(--prop) in child values that you want to change
+*/
+.dark-theme {
+  --bg: var(--dark3); /* For body background */
+  --bg2: var(--dark2); /* For headers, menus */
+  --bg2-hover: var(--dark); /* Hover Effect on menu items in menu */
+  --bg3: var(--grey3); /* Dividers in Menu or elsewhere */
+
+  --text: var(--white); /* Main Text */
+  --text2: var(--grey); /* Little Darker Text compared to above*/
+  --text3: var(--grey3); /* Even Darker */
+
+  --shadow-color: rgba(0, 0, 0, 0.13);
+  --nav-shadow: #4d525652;
+
+  --border-color: var(--dark2);
+
+  /* Transitoin Effects */
+  will-change: background, color;
+  transition: background 250ms ease-in-out, color 350ms linear;
+}

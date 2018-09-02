@@ -1,0 +1,45 @@
+.header{
+  padding: 0.89em 1em;
+  background: var(--bg2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  box-sizing: border-box;
+  min-width: 12.83em;
+  padding: 0.5em 0;
+  background: var(--bg);
+  color: var(--text, #4d5256);
+}
+
+.menu li {
+  font-size: 0.89em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+.menu li:hover {
+  background-color: var(--bg2-hover);
+}
+
+.menu li.active {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.menu li.active:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.notification {
+  display: flex;
+  align-items: start;
+}
+
+.notification .content {
+  padding: 0 0 0 1em;
+}
+

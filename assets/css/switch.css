@@ -1,0 +1,31 @@
+/* SWITCH V2 */
+.switch {
+  position: relative;
+  width: 3.25em; 
+  height: 1.25em;
+  background: #b5b5b5;
+  border-radius: 5em; /* any big value (but not 100%)*/
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.switch:before {
+  content: '';
+  position: absolute;
+  width: 1.25em; /* parent height for sqaure and circle */
+  height: 100%; /* parent height */
+  border-radius: 50%;
+  background: #2ca58d;
+  opacity: .5;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.switch.active {
+  background: #4d5256;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.switch.active:before {
+  opacity: 1;
+  transform: translateX(2em);
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}

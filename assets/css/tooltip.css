@@ -1,0 +1,62 @@
+/*_______#TOOLTIP_______*/
+
+.tooltipped {
+  position: relative;
+}
+
+.tooltipped:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.4em solid transparent;
+  border-bottom-color: var(--text);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tooltipped:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 0.5em);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  background: var(--text);
+  font-size: 0.8em;
+  color: #fff;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tooltipped.left:before,
+.tooltipped.left:after {
+  left: 0;
+  transform: translateX(0);
+}
+
+.tooltipped.right:before,
+.tooltipped.right:after {
+  left: initial;
+  right: 0;
+  transform: translateX(0);
+}
+
+.tooltipped.left:before {
+  transform: translate(50%, -50%);
+}
+
+.tooltipped.right:before {
+  transform: translate(-50%, -50%);
+}
+
+.tooltipped:hover:after,
+.tooltipped:hover:before {
+  visibility: visible;
+  opacity: 1;
+}

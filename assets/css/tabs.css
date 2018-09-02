@@ -1,0 +1,50 @@
+/*_______#TABS and PAGE HEADER_______*/
+
+.page-header {
+  background: var(--bg2);
+  /* background-color: hsla(197, 100%, 45%, 0.1); */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-bar {
+  padding: 1em 0 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  box-sizing: border-box;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.44em 0;
+  color: var(--text2, #818487);
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.tab:not(:last-child) {
+  margin-right: 1.79em;
+}
+
+.tab:hover {
+  color: var(--green, #2ca58d);
+  border-bottom-color: var(--text2, #818487);
+  transition: color 0.31s linear, border-bottom-color 0.31s linear;
+}
+
+.tab.active,
+.tab.active:hover {
+  color: #2ca58d;
+  border-bottom-color: var(--green, #2ca58d);
+  transition: color 0.31s linear, border-bottom-color 0.31s linear;
+}

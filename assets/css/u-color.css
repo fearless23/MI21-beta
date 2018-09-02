@@ -1,0 +1,67 @@
+/*_______#UTILITIES COLOR_______*/
+
+/* Root Colors */
+
+.bg-primary   { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+
+.bg-success  { background-color: var(--success); }
+.bg-warn     { background-color: var(--warn);    }
+.bg-error    { background-color: var(--error);   }
+
+.bg-white  { background-color: var(--white) }
+.bg-light  { background-color: var(--light) }
+.bg-light2 { background-color: var(--light2) }
+.bg-light3 { background-color: var(--light3) }
+
+
+.bg-grey   { background-color: var(--grey) }
+.bg-grey2   { background-color: var(--grey2) }
+.bg-grey3   { background-color: var(--grey3) }
+
+.bg-dark   { background-color: var(--dark) }
+.bg-dark2   { background-color: var(--dark2) }
+.bg-dark3  { background-color: var(--dark3) }
+
+.bg-black  { background-color: var(--black) }
+
+
+
+
+
+
+.text-primary   { color: var(--primary) }
+.text-secondary { color: var(--secondary) }
+
+.text-success   { color: var(--success) }
+.text-warn      { color: var(--warn) }
+.text-error     { color: var(--error) }
+
+.text-white  { color: var(--white) }
+.text-light  { color: var(--light) }
+.text-light2 { color: var(--light2) }
+.text-light3 { color: var(--light3) }
+
+
+.text-grey   { color: var(--grey) }
+.text-grey2   { color: var(--grey2) }
+.text-grey3   { color: var(--grey3) }
+
+.text-dark   { color: var(--dark) }
+.text-dark2   { color: var(--dark2) }
+.text-dark3  { color: var(--dark3) }
+
+.text-black  { color: var(--black) }
+
+
+
+
+.bg{ background-color:  var(--bg);} /* For body background */
+.bg2{ background-color:  var(--bg2);} /* For headers, menus */
+.bg3{ background-color: var(--grey);} /* Dividers in Menu or elsewhere */
+
+.text{ color: var(--dark);} /* Main Text */
+.text2{ color: var(--grey3);} /* Little Lighter Text compared to above*/
+.text3 { color: var(--grey2);} /* Even lighter */
+
+.border { border-color: var(--grey); }

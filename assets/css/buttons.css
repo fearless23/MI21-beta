@@ -1,0 +1,93 @@
+/*_______#BUTTONS_______*/
+
+button,
+.btn {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+  overflow: hidden;
+  font-size: 0.89em;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  border-radius: .33em;
+}
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.56em 1.12em;
+  background-color: var(--primary);
+  color: var(--white, #fff);
+  transition: all 60ms ease-in-out;
+}
+
+.btn:hover,
+button:hover {
+  opacity: 0.85;
+  transition: all 60ms ease-in-out;
+}
+
+.btn:active,
+button:active {
+  opacity: 0.75;
+  transform: scale(0.97);
+  transition: all 60ms ease-in-out;
+}
+
+.btn:focus,
+button:focus {
+  outline: none;
+}
+
+.btn:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-white {
+  color: var(--text);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg);
+}
+
+.btn-white:hover {
+  border: 1px solid #00a8e8;
+}
+
+.btn-clear {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.btn-outline {
+  border: 1px solid var(--primary);
+  background-color: var(--bg2);
+  color: var(--text);
+  transition: all 60ms ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transition: all 60ms ease-in-out;
+}
+
+.btn-icon {
+  padding: 0.8em;
+  border-radius: 100%;
+}
+
+.btn-with-icon > span {
+  display: inline-block;
+}
+
+.btn-with-icon > span:not(:first-child){
+  margin-left: 1em;
+}

@@ -1,0 +1,55 @@
+/*_______#CARD_______*/
+
+.card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg);
+  box-shadow: 3px 3px 6px var(--shadow-color);
+  height: 100%;
+}
+
+.card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.89em 1em;
+  padding: 0 1em;
+  height: 3em;
+  background: var(--bg2);
+}
+
+h3.card-title,
+.title {
+  margin: 0;
+  font-size: 0.89em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.card .content {
+  padding: 1em;
+}
+
+.card .content > *:not(:first-child), .content > *:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+.card-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.card-info-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.89em;
+  color: var(--text3, #b5b5b5);
+}
+
+.card-info-detail {
+  color: var(--blue);
+  line-height: 2;
+  font-size: 0.89em;
+}
